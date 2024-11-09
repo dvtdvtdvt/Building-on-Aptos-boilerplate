@@ -1,4 +1,4 @@
-module metaschool::calculator_l05
+module metaschool::calculator_48
 {
     use std::string::{String,utf8};
     use std::signer;
@@ -12,7 +12,7 @@ module metaschool::calculator_l05
     {
         if (!exists<Message>(signer::address_of(account))){
             let message = Message {
-                my_message : utf8(b"I am a Calculator Dapp")            
+                my_message : utf8(b"Hi, its my first dApp on the Aptos ecosystem")            
             };
             move_to(account,message);    
         }
